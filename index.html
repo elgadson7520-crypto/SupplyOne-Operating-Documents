@@ -949,7 +949,7 @@ const today=new Date();
 // Order here is the order they appear in the sidebar.
 const LOCATION_ORDER = ['Dallas','OKC','Albuquerque','Chicago','Arkansas','Tucson','Wisconsin'];
 const MACHINES={
-  'Dallas':['130 38x100 FFG','140 38x100 FFG','210 66x110 RDC','220 66x80 RDC','SRPACK'],
+  'Dallas':['SRPACK 130 38x100 FFG','SERENCO 140 38x100 FFG','LANGSTON 3 COLOR 210 66x110 RDC','LANGSTON 4 COLOR 220 66x80 RDC','J&L 415 SFG 115'],
   'OKC':['110 37x82 FFG','120 50x110 FFG','210 66x110 RDC','220 66x110 RDC','230 66x110 RDC'],
   'Albuquerque':['110 47x95 FFG','120 38x80 FFG','210 66x110 RDC','510 64x160 Prnt'],
   'Chicago':[],
@@ -1031,11 +1031,11 @@ let expandedLocations=new Set();
 let expandedMachine=null;
 
 let documents=[
-  {id:1,docNo:'SRPACK-SOP-001',docType:'SOP',docName:'Box Type Reference Guide',revision:'Rev A',issueDate:'2026-02-19',effectiveDate:'2026-02-19',reviewDate:'',nextReviewDate:'2027-02-19',location:'Dallas',machine:'SRPACK',driveId:'',spUrl:'',notes:'Machine configuration reference by box style and board type.'},
-  {id:2,docNo:'SRPACK-QMF-001',docType:'QMF',docName:'First Article Inspection',revision:'Rev A',issueDate:'2026-02-19',effectiveDate:'2026-02-19',reviewDate:'',nextReviewDate:'2027-02-19',location:'Dallas',machine:'SRPACK',driveId:'',spUrl:'',notes:'FAI form - complete before authorizing full production run.'},
-  {id:3,docNo:'SRPACK-SOP-002',docType:'SOP',docName:'Job Changeover Procedure',revision:'Rev A',issueDate:'2026-02-19',effectiveDate:'2026-02-19',reviewDate:'',nextReviewDate:'2027-02-19',location:'Dallas',machine:'SRPACK',driveId:'',spUrl:'',notes:'Minimizing downtime through structured external and internal setup.'},
-  {id:4,docNo:'SRPACK-QMF-002',docType:'QMF',docName:'Operator Training & Competency Record',revision:'Rev A',issueDate:'2026-02-19',effectiveDate:'2026-02-19',reviewDate:'',nextReviewDate:'2027-02-19',location:'Dallas',machine:'SRPACK',driveId:'',spUrl:'',notes:'Individual qualification documentation for SRPACK operators.'},
-  {id:5,docNo:'SRPACK-WIQ-001',docType:'WIQ',docName:'Pre-Shift Startup Checklist',revision:'Rev A',issueDate:'2026-02-19',effectiveDate:'2026-02-19',reviewDate:'',nextReviewDate:'2027-02-19',location:'Dallas',machine:'SRPACK',driveId:'',spUrl:'',notes:'Complete before first job of every shift. Do not skip.'},
+  {id:1,docNo:'SRPACK-SOP-001',docType:'SOP',docName:'Box Type Reference Guide',revision:'Rev A',issueDate:'2026-02-19',effectiveDate:'2026-02-19',reviewDate:'',nextReviewDate:'2027-02-19',location:'Dallas',machine:'SRPACK 130 38x100 FFG',driveId:'',spUrl:'',notes:'Machine configuration reference by box style and board type.'},
+  {id:2,docNo:'SRPACK-QMF-001',docType:'QMF',docName:'First Article Inspection',revision:'Rev A',issueDate:'2026-02-19',effectiveDate:'2026-02-19',reviewDate:'',nextReviewDate:'2027-02-19',location:'Dallas',machine:'SRPACK 130 38x100 FFG',driveId:'',spUrl:'',notes:'FAI form - complete before authorizing full production run.'},
+  {id:3,docNo:'SRPACK-SOP-002',docType:'SOP',docName:'Job Changeover Procedure',revision:'Rev A',issueDate:'2026-02-19',effectiveDate:'2026-02-19',reviewDate:'',nextReviewDate:'2027-02-19',location:'Dallas',machine:'SRPACK 130 38x100 FFG',driveId:'',spUrl:'',notes:'Minimizing downtime through structured external and internal setup.'},
+  {id:4,docNo:'SRPACK-QMF-002',docType:'QMF',docName:'Operator Training & Competency Record',revision:'Rev A',issueDate:'2026-02-19',effectiveDate:'2026-02-19',reviewDate:'',nextReviewDate:'2027-02-19',location:'Dallas',machine:'SRPACK 130 38x100 FFG',driveId:'',spUrl:'',notes:'Individual qualification documentation for SRPACK operators.'},
+  {id:5,docNo:'SRPACK-WIQ-001',docType:'WIQ',docName:'Pre-Shift Startup Checklist',revision:'Rev A',issueDate:'2026-02-19',effectiveDate:'2026-02-19',reviewDate:'',nextReviewDate:'2027-02-19',location:'Dallas',machine:'SRPACK 130 38x100 FFG',driveId:'',spUrl:'',notes:'Complete before first job of every shift. Do not skip.'},
 ];
 let manualDocuments = documents.slice(); // baseline (manually-curated entries)
 let driveDocuments = []; // auto-pulled from Drive folders
